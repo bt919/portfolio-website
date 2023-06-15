@@ -24,7 +24,7 @@ const Header = (props) => {
         alt="linkedin profile page"
         target="_blank"
       >
-        <i class="devicon-linkedin-plain"></i>
+        <i className="devicon-linkedin-plain"></i>
       </a>
       <Icon path={mdiThemeLightDark} size={1} onClick={toggleTheme} />
     </header>

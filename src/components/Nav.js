@@ -1,13 +1,17 @@
-import Header from "./components/Header";
-import Nav from "./components/Nav";
-
-function App() {
+const Nav = () => {
   return (
-    <div className="App">
-      <Header fname="Franky" lname="Corby"></Header>
-      <Nav></Nav>
-    </div>
+    <nav>
+      <a href="">
+        <div className="about">About</div>
+      </a>
+      <a href="">
+        <div className="projects">Projects</div>
+      </a>
+      <a href="">
+        <div className="contact">Contact</div>
+      </a>
+    </nav>
   );
-}
+};
 
-export default App;
+export default Nav;
