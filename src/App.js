@@ -4,10 +4,18 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import { useState } from "react";
 
 function App() {
+  const [ticked, setTicked] = useState(false);
+
+  const handleClick = () => {
+    setTicked(!ticked);
+  };
+
   return (
-    <div className="App">
+    <div className={`App ${ticked === true ? "ticked" : ""}`}>
       <HashRouter>
         <Header fname="Franky" lname="Corby"></Header>
         <Nav></Nav>
@@ -16,6 +24,7 @@ function App() {
           <Route path="/projects" element={<Projects></Projects>}></Route>
           <Route path="/contact" element={<Contact></Contact>}></Route>
         </Routes>
+        <Footer handler={handleClick}></Footer>
       </HashRouter>
     </div>
   );

@@ -12,15 +12,11 @@ const Header = (props) => {
   return (
     <header>
       <h1>{props.fname + " " + props.lname}</h1>
-      <a
-        href="https://github.com/bt919"
-        alt="github profile page"
-        target="_blank"
-      >
+      <a href="https://github.com/" alt="github profile page" target="_blank">
         <i className="devicon-github-original"></i>
       </a>
       <a
-        href="https://linkedin.com/in/barthan-thirunavukarasu-40bbaa277"
+        href="https://linkedin.com/"
         alt="linkedin profile page"
         target="_blank"
       >
