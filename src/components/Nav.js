@@ -1,14 +1,14 @@
 const Nav = () => {
   return (
     <nav>
-      <a href="">
-        <div className="about">About</div>
+      <a href="" className="about">
+        About
       </a>
-      <a href="">
-        <div className="projects">Projects</div>
+      <a href="" className="projects">
+        Projects
       </a>
-      <a href="">
-        <div className="contact">Contact</div>
+      <a href="" className="contact">
+        Contact
       </a>
     </nav>
   );
