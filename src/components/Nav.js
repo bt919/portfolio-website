@@ -1,15 +1,32 @@
+import { NavLink } from "react-router-dom";
+
 const Nav = () => {
   return (
     <nav>
-      <a href="" className="about">
+      <NavLink
+        to="/"
+        className={({ isActive, isPending }) => {
+          return isActive ? "active" : "";
+        }}
+      >
         About
-      </a>
-      <a href="" className="projects">
+      </NavLink>
+      <NavLink
+        to="/projects"
+        className={({ isActive, isPending }) => {
+          return isActive ? "active" : "";
+        }}
+      >
         Projects
-      </a>
-      <a href="" className="contact">
+      </NavLink>
+      <NavLink
+        to="/contact"
+        className={({ isActive, isPending }) => {
+          return isActive ? "active" : "";
+        }}
+      >
         Contact
-      </a>
+      </NavLink>
     </nav>
   );
 };
