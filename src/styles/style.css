@@ -68,6 +68,7 @@ body {
 .App.ticked {
     background-image: url("../images/dogo.jpeg");
     background-repeat: repeat-y;
+    background-size: 100%;
 }
 
 header, nav {
